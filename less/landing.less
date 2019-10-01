@@ -1,0 +1,87 @@
+.landing {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    .backText {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        .bold();
+        color: @gray-secondary;
+        font-size: 9rem;
+        text-align: justify;
+        text-align-last: justify;
+        overflow: hidden;
+
+        span {
+            .light();
+        }
+        .reg {
+            .regular();
+        }
+    }
+
+    .title {
+        align-self: center;
+        margin: 0 auto;
+        text-align: left;
+        h1 {
+            position: relative;
+            font-size: 17rem;
+
+            transform: skew(0deg, 11deg);
+            top: 40px;
+            left: 50px;
+
+            &:after {
+                content: "KEN";
+                color: @white-secondary;
+                z-index: -1;
+                position: absolute;
+                top: -15px;
+                left: 20px;
+
+            }
+        }
+
+        h2 {
+            font-size: 12rem;
+            .light();
+            padding: 0;
+            margin: 0;
+            transform: skew(-50deg, 11deg) scaleY(0.8);
+
+            &:after {
+                content: "DIEHL";
+                color: @white-secondary;
+                z-index: -1;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-size: 4.3rem;
+            transform: skew(0deg, 11deg);
+            top: -15px;
+            left: -25px;
+
+            &:after {
+                content: "WEB DEVELOPER";
+                color: @white-secondary;
+                .light();
+                font-size: 4rem;
+                position: absolute;
+                top: 7px;
+                left: -10px;
+                transform: scale(1.02);
+
+            }
+        }
+
+    }
+}
