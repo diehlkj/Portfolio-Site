@@ -180,6 +180,13 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #2b2b2b;
+  z-index: 100;
+}
 .landing {
   display: flex;
   width: 100vw;
@@ -253,4 +260,35 @@ p {
   top: 7px;
   left: -10px;
   transform: scale(1.02);
+}
+.landing .next {
+  border: 1px solid white;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  align-self: flex-end;
+  left: calc(50% - 30px);
+  bottom: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.landing .next:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 40%;
+  left: 32%;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.landing .next:hover {
+  background: #f7f7f7;
+  border-radius: 0;
+}
+.landing .next:hover:after {
+  border-color: #2b2b2b;
 }
