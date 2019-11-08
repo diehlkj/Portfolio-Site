@@ -1,0 +1,440 @@
+@font-face {
+  font-family: BigJohnBold;
+  src: url(../fonts/BigJohnPRO-Bold.otf);
+}
+@font-face {
+  font-family: BigJohnRegular;
+  src: url(../fonts/BigJohnPRO-Regular.otf);
+}
+@font-face {
+  font-family: BigJohnLight;
+  src: url(../fonts/BigJohnPRO-Light.otf);
+}
+.bold {
+  font-family: BigJohnBold, sans-serif;
+}
+.regular {
+  font-family: BigJohnRegular, sans-serif;
+}
+.light {
+  font-family: BigJohnLight, sans-serif;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: BigJohnRegular, sans-serif;
+  color: #f7f7f7;
+  background: #2b2b2b;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: BigJohnBold, sans-serif;
+  color: #f7f7f7;
+}
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2b2b2b;
+  z-index: 100;
+}
+.main-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.section-label {
+  position: absolute;
+  font-size: 7rem;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  top: 97%;
+  padding-top: 20px;
+  color: #282828;
+}
+.landing {
+  height: 100vh;
+}
+.landing .back-text {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  font-family: BigJohnBold, sans-serif;
+  color: #282828;
+  font-size: 9rem;
+  text-align: justify;
+  text-align-last: justify;
+  overflow: hidden;
+  cursor: default;
+}
+.landing .back-text span {
+  font-family: BigJohnLight, sans-serif;
+}
+.landing .back-text .reg {
+  font-family: BigJohnRegular, sans-serif;
+}
+.landing .title {
+  align-self: center;
+  margin: 0 auto;
+  text-align: left;
+}
+.landing .title h1 {
+  position: relative;
+  font-size: 17rem;
+  transform: skew(0deg, 11deg);
+  top: 40px;
+  left: 50px;
+}
+.landing .title h1:after {
+  content: "KEN";
+  color: #d7d7d7;
+  z-index: -1;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+.landing .title h2 {
+  font-size: 12rem;
+  font-family: BigJohnLight, sans-serif;
+  padding: 0;
+  margin: 0;
+  transform: skew(-50deg, 11deg) scaleY(0.8);
+}
+.landing .title h2:after {
+  content: "DIEHL";
+  color: #d7d7d7;
+  z-index: -1;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.landing .title h3 {
+  position: relative;
+  font-size: 4.3rem;
+  transform: skew(0deg, 11deg);
+  top: -15px;
+  left: -25px;
+}
+.landing .title h3:after {
+  content: "WEB DEVELOPER";
+  color: #d7d7d7;
+  font-family: BigJohnLight, sans-serif;
+  font-size: 4rem;
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  transform: scale(1.02);
+}
+.landing .next {
+  border: 1px solid white;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  align-self: flex-end;
+  left: calc(50% - 30px);
+  bottom: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.landing .next:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 40%;
+  left: 32%;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.landing .next:hover {
+  background: #f7f7f7;
+  border-radius: 0;
+}
+.landing .next:hover:after {
+  border-color: #2b2b2b;
+}
+.introduction {
+  position: relative;
+  height: 100vh;
+  background: url('../img/bkg-lines.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.introduction .intro-content {
+  margin: 0 auto;
+  align-self: center;
+  width: 700px;
+}
+.introduction .intro-content .intro-hi {
+  display: flex;
+  flex-direction: row;
+}
+.introduction .intro-content .intro-hi h1 {
+  font-family: BigJohnRegular, sans-serif;
+  font-size: 35rem;
+  width: 50%;
+  margin-top: -28px;
+}
+.introduction .intro-content .intro-hi h1::first-letter {
+  margin-left: -40px;
+}
+.introduction .intro-content .intro-hi div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.introduction .intro-content .intro-hi div h2:nth-of-type(1) {
+  font-family: BigJohnRegular, sans-serif;
+  font-size: 6.6rem;
+  margin-bottom: 37px;
+}
+.introduction .intro-content .intro-hi div h2:nth-of-type(2) {
+  font-family: BigJohnLight, sans-serif;
+  font-size: 5.4em;
+}
+.introduction .intro-content p {
+  font-size: 3rem;
+  width: 100%;
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+.introduction .intro-content h3 {
+  font-family: BigJohnRegular, sans-serif;
+  font-size: 3.7rem;
+  margin-bottom: 10px;
+}
+.introduction .intro-content a {
+  text-decoration: none;
+  color: #7ed8fc;
+  font-family: BigJohnLight, sans-serif;
+  font-size: 2.7rem;
+  margin-right: 30px;
+}
+.projects {
+  height: 100vh;
+  position: relative;
+}
+.projects .project-list {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-items: center;
+}
+.projects .project-list article {
+  border: 1px solid orange;
+  width: 850px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  background: #f7f7f7;
+}
+.projects .project-list article figure {
+  width: 200px;
+  height: 200px;
+  background: lime;
+}
+.projects .project-list article div {
+  border: 1px solid teal;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  color: #2b2b2b;
+}
+.projects .project-list article div p {
+  margin-bottom: 15px;
+}
+.projects .project-list article div .project-title {
+  font-family: BigJohnBold, sans-serif;
+  width: 100%;
+  font-size: 4.5rem;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.projects .project-list article div .code-label {
+  font-family: BigJohnLight, sans-serif;
+  font-size: 1.8rem;
+  margin-right: 20px;
+  padding: 3px 8px 0;
+  color: #f7f7f7;
+}
+.projects .project-list article div .html {
+  background: #db3838;
+}
+.projects .project-list article div .css {
+  background: #058cda;
+}
+.projects .project-list article div .js {
+  background: #e6d820;
+}
+.projects .project-list article div .desc {
+  width: 100%;
+  font-size: 1.7rem;
+}
+.projects .project-list article div .role {
+  font-family: BigJohnRegular, sans-serif;
+  width: 100%;
+  font-size: 1.7rem;
+}
+.projects .project-list article div .github {
+  font-family: BigJohnLight, sans-serif;
+  color: #2b2b2b;
+  width: 100%;
+  font-size: 2.3rem;
+  text-decoration: none;
+}
