@@ -7,7 +7,6 @@
         <title>Ken Diehl</title>
 
         <link href="css/index.css" rel="stylesheet">
-        <script src="js/index.js"></script>
     </head>
 
     <body>
@@ -15,16 +14,17 @@
 
         <nav>
             <h1>0<span id="sec-counter">1</span></h1>
-            <div>
-                <a href="">LANDING</a>
-                <a href="">ABOUT</a>
-                <a href="">SKILLS</a>
-                <a href="">PROJECTS</a>
-                <a href="">CONTACT</a>
+            <span id="nav-button">&#9776;</span>
+            <div class="hide-nav">
+                <a href="#landing">LANDING</a>
+                <a href="#introduction">INTRODUCTION</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </nav>
 
-        <header class="landing main-section">
+        <header id="landing" class="landing main-section">
             <p class="back-text">DEVELOPER <span>DESIGNER</span> HTML <span class="reg">CSS</span> JS PHP <span>SQL</span> PYTHON <span class="reg">GIT</span> LINUX <span>PHOTOSHOP</span> EXPERIENCE DESIGN <span class="reg">ILLUSTRATOR</span> HUMAN BEING <span>REAL PERSON</span> EMPATHETIC <span class="reg">CREATIVE</span> RESPONSIVE UNIQUE <span class="reg">EFFICIENT</span> <span>INDEPENDENT</span> HONEST <span>DYNAMIC</span> AMBITIOUS <span class="reg">ATTENTIVE</span> REALISTC
             </p>
             <div class="title">
@@ -33,63 +33,94 @@
                 <h3>WEB DEVELOPER</h3>
             </div>
     
-            </header>
-    
-            <section class="introduction main-section">
-    
-                <h4 class="section-label">INTRODUCTION</h4><!-- Section label -->
-    
-                <div class="intro-content"> <!-- Content Container -->
-                    <div class="intro-hi">
-                        <h1>HI</h1>
-                        <div>
-                            <h2>How are you doing?</h2>
-                            <h2>You look amazing today.</h2>
-                        </div>
+        </header>
+
+        <section id="introduction" class="introduction main-section">
+
+            <h4 class="section-label">INTRODUCTION</h4>
+
+            <div class="intro-content">
+                <div class="intro-hi">
+                    <h1>HI</h1>
+                    <div>
+                        <h2>How are you doing?</h2>
+                        <h2>You look amazing today.</h2>
                     </div>
-    
-                    <p>My name is Ken Diehl, I'm a student full stack developer attending Lambda School. Over the last five years I've immersed myself in various web technologies and computer hardware with aspirations to begin a career in the web development industry.</p>
-    
-                    <h3>Want to get in touch?</h3>
-    
-                    <a href="https://github.com/diehlkj">GitHub</a>
-                    <a href="https://twitter.com/diehlkj">Twitter</a>
-                    <a href="https://www.linkedin.com/in/kenneth-d-b410b6118/">LinkedIn</a>
-                    <a href="mailto:diehlkj.dev@gmail.com">diehlkj.dev@gmail.com</a>
-                </div> <!-- End Content Container -->
-            </section>
+                </div>
+
+                <p>My name is Ken Diehl, I'm a student full stack developer attending Lambda School. Over the last five years I've immersed myself in various web technologies and computer hardware with aspirations to begin a career in the web development industry.</p>
+
+                <h3>Want to get in touch?</h3>
+
+                <a href="https://github.com/diehlkj">GitHub</a>
+                <a href="https://twitter.com/diehlkj">Twitter</a>
+                <a href="https://www.linkedin.com/in/kenneth-d-b410b6118/">LinkedIn</a>
+                <a href="mailto:diehlkj.dev@gmail.com">diehlkj.dev@gmail.com</a>
+            </div>
+        </section>
         
 
-        <section class="projects main-section">
+        <section id="projects" class="projects main-section">
             <h4 class="section-label">PROJECTS</h4>
             <div class="project-list">
                 <article>
-                    <figure></figure>
+                    <figure class="olad"></figure>
 
                     <aside>
                         <div class="project-title">
                             <a href="">ONE LINE A DAY</a>
                             <div class="tags">
-                                <span class="html">HTML</span>
-                                <span class="css">CSS/LESS</span>
-                                <span class="js">JS</span>
+                                <span class="HTML">HTML</span>
+                                <span class="CSS">CSS/LESS</span>
+                                <span class="JS">JS</span>
                             </div>
                             
                             <p class="desc">Landing page for One Line a Day journaling app.</p>
 
                             <div class="buttons">
                                 <a href="" class="github">VIEW ON GITHUB</a>
-                                <a class="more-info">MORE INFO</a>
+                                <a id="olad" class="more-info">MORE INFO</a>
                             </div>
                         </div>
-                        <!-- <p class="role">What I did:<br/>
-                        - Created live site based off of a design by our UX designer<br/>
-                        - Modified layout for better view across different device sizes</p> -->
-                        
+
+                        <div id="olad-info" class="info info-hide">
+                            <h1>ROLE: FRONT-END DEVELOPER</h1>
+                            <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
+                            <p>The purpose of this project was to demonstrate our understanding of HTML/CSS/LESS fundamentals and to get a feel for working in an industry like environment.</p>
+                        </div>
                     </aside>
                 </article>
+
+                <article>
+                        <figure class="ajlt"></figure>
+    
+                        <aside>
+                            <div class="project-title">
+                                <a href="">LAMBDA TIMES</a>
+                                <div class="tags">
+                                    <span class="CSS">CSS/LESS</span>
+                                    <span class="JS">JS</span>
+                                </div>
+                                
+                                <p class="desc">News site using JS component function and axios API calls.</p>
+    
+                                <div class="buttons">
+                                    <a href="" class="github">VIEW ON GITHUB</a>
+                                    <a id="ajlt" class="more-info">MORE INFO</a>
+                                </div>
+                            </div>
+    
+                            <div id="ajlt-info" class="info info-hide">
+                                <h1>ROLE: FRONT-END DEVELOPER</h1>
+                                <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
+                                <p>The purpose of this project was to demonstrate our understanding of HTML/CSS/LESS fundamentals and to get a feel for working in an industry like environment.</p>
+                            </div>
+                        </aside>
+                    </article>
             </div>
             
         </section> <!-- End Project Section -->
+        
+        <script src="js/index.js"></script>
     </body>
 </html>

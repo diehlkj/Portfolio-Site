@@ -1,5 +1,5 @@
 .projects {
-    height: 100vh;
+    // height: 100vh;
     position: relative;
     flex-direction: column;
 
@@ -11,8 +11,7 @@
 
         article {
             width: 900px;
-            height: 285px;
-            // height: 900px; 
+            // height: 285px;
             padding: 30px;
             display: flex;
             flex-direction: row;
@@ -26,12 +25,35 @@
             -moz-box-shadow: 10px 10px 0px 0px rgba(215,215,215,1);
             box-shadow: 10px 10px 0px 0px rgba(215,215,215,1);
             
+            .olad {
+                background: #fc7e98;
+
+                &::before {
+                    background: #eb8d5e;
+                }
+                &::after {
+                background: url('../img/one-line-a-day.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+            }
+            .ajlt {
+                background: #3b3b3b;
+
+                &::before {
+                    background: #29a9ff;
+                }
+                &::after {
+                background: url('../img/lambda-times.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+            }
             figure {
                 align-self: flex-start;
                 width: 225px;
                 height: 225px;
                 margin-right: 25px;
-                background: #fc7e98;
                 transform: translate(10px, 10px);
 
                 &::before {
@@ -39,7 +61,6 @@
                     position: absolute;
                     width: 225px;
                     height: 225px;
-                    background: #eb8d5e;
                     transform: translate(-20px, -20px);
                 }
                 &::after {
@@ -47,9 +68,6 @@
                     position: absolute;
                     width: 225px;
                     height: 225px;
-                    background: url('../img/one-line-a-day.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
                     transform: translate(-10px, -10px);
                 }
             }
@@ -87,13 +105,13 @@
                             padding: 3px 8px 2px;
                             color: @white-primary;
                         }
-                        .html {
+                        .HTML {
                             background: rgb(219, 56, 56);
                         }
-                        .css {
+                        .CSS {
                             background: rgb(5, 140, 218);
                         }
-                        .js {
+                        .JS {
                             background: rgb(230, 216, 32);
                         }
                     }  
@@ -120,6 +138,27 @@
                         .more-info {
                             // justify-self: flex-end;
                         }
+                    }
+                }
+
+                .info-hide {
+                    display: none;
+                }
+                .info-show {
+                    display: block;
+                }
+                .info {
+                    margin-top: 20px;
+
+                    h1 {
+                        font-size: 2.8rem;
+                        color: @gray-primary;
+                        margin-bottom: 20px;
+                        .light();
+                    }
+                    p {
+                        font-size: 1.9rem;
+                        margin-bottom: 20px;
                     }
                 }
             }
