@@ -4,16 +4,20 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Ken Diehl</title>
+        <title>Ken Diehl | Portfolio</title>
 
         <link href="css/index.css" rel="stylesheet">
     </head>
 
     <body>
-        <div id="loading"></div>
+        <div id="loading">
+            <h1>THANKS FOR SWINGING BY.</h1>
+            <h2>Im just getting things ready for you.</h2>
+            <h3>Just so you know, this portfolio is still under construciton...</h3>
+        </div>
 
         <nav>
-            <h1>0<span id="sec-counter">1</span></h1>
+            <h1>0<span id="sec-counter">0</span></h1>
             <span id="nav-button">&#9776;</span>
             <div class="hide-nav">
                 <a href="#landing">LANDING</a>
@@ -35,7 +39,7 @@
     
         </header>
 
-        <section id="introduction" class="introduction main-section">
+        <section id="introduction" class="introduction main-section lines-bkg">
 
             <h4 class="section-label">INTRODUCTION</h4>
 
@@ -54,21 +58,100 @@
 
                 <a href="https://github.com/diehlkj">GitHub</a>
                 <a href="https://twitter.com/diehlkj">Twitter</a>
-                <a href="https://www.linkedin.com/in/kenneth-d-b410b6118/">LinkedIn</a>
-                <a href="mailto:diehlkj.dev@gmail.com">diehlkj.dev@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kenneth-d-b410b6118">LinkedIn</a>
+                <a href="#contact">Email</a>
             </div>
         </section>
         
+        <section id="skills" class="skills main-section lines-bkg">
+            <h4 class="section-label">SKILLS</h4>
+            <main>
+                <h1>WHAT ARE MY SKILLS?</h1>
+                <h2>Check out these handy dandy charts...</h2>
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">What I'm Comfortable With:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>6 Years</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>6 Years</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>2 Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <section id="projects" class="projects main-section">
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">What I'm Learning:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>React</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Node</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </article>
+            </main>
+        </section>
+        
+        <section id="projects" class="projects main-section lines-bkg">
             <h4 class="section-label">PROJECTS</h4>
             <div class="project-list">
+                <article>
+                    <figure class="ajlt"></figure>
+
+                    <aside>
+                        <div class="project-title">
+                            <a href="https://github.com/diehlkj/Sprint-Challenge-Applied-Javascript">LAMBDA TIMES</a>
+                            <div class="tags">
+                                <span class="CSS">CSS/LESS</span>
+                                <span class="JS">JS</span>
+                            </div>
+                            
+                            <p class="desc">News site using JS component function and axios API calls.</p>
+
+                            <div class="buttons">
+                                <a href="https://github.com/diehlkj/Sprint-Challenge-Applied-Javascript" class="github">VIEW ON GITHUB</a>
+                                <a id="ajlt" class="more-info">MORE INFO</a>
+                            </div>
+                        </div>
+
+                        <div id="ajlt-info" class="info info-hide">
+                            <h1>ROLE: JS DEVELOPER</h1>
+                            <p>This project was an exam testing understanding of the DOM, events, JavaScript components, HTTP GET requests and the Axios library.</p>
+                            
+                            <p>My role was to build components and axios requests to construct the pages header, trending tags, and article cards.</p>
+                        </div>
+                    </aside>
+                </article>
                 <article>
                     <figure class="olad"></figure>
 
                     <aside>
                         <div class="project-title">
-                            <a href="">ONE LINE A DAY</a>
+                            <a href="https://bw-one-line-per-day.github.io/UI/">ONE LINE A DAY</a>
                             <div class="tags">
                                 <span class="HTML">HTML</span>
                                 <span class="CSS">CSS/LESS</span>
@@ -78,48 +161,43 @@
                             <p class="desc">Landing page for One Line a Day journaling app.</p>
 
                             <div class="buttons">
-                                <a href="" class="github">VIEW ON GITHUB</a>
+                                <a href="https://github.com/bw-one-line-per-day/UI" class="github">VIEW ON GITHUB</a>
                                 <a id="olad" class="more-info">MORE INFO</a>
                             </div>
                         </div>
 
                         <div id="olad-info" class="info info-hide">
                             <h1>ROLE: FRONT-END DEVELOPER</h1>
-                            <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
                             <p>The purpose of this project was to demonstrate our understanding of HTML/CSS/LESS fundamentals and to get a feel for working in an industry like environment.</p>
+                            
+                            <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
                         </div>
                     </aside>
-                </article>
-
-                <article>
-                        <figure class="ajlt"></figure>
-    
-                        <aside>
-                            <div class="project-title">
-                                <a href="">LAMBDA TIMES</a>
-                                <div class="tags">
-                                    <span class="CSS">CSS/LESS</span>
-                                    <span class="JS">JS</span>
-                                </div>
-                                
-                                <p class="desc">News site using JS component function and axios API calls.</p>
-    
-                                <div class="buttons">
-                                    <a href="" class="github">VIEW ON GITHUB</a>
-                                    <a id="ajlt" class="more-info">MORE INFO</a>
-                                </div>
-                            </div>
-    
-                            <div id="ajlt-info" class="info info-hide">
-                                <h1>ROLE: FRONT-END DEVELOPER</h1>
-                                <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
-                                <p>The purpose of this project was to demonstrate our understanding of HTML/CSS/LESS fundamentals and to get a feel for working in an industry like environment.</p>
-                            </div>
-                        </aside>
-                    </article>
+                </article>                
             </div>
-            
-        </section> <!-- End Project Section -->
+        </section> 
+        
+        <section id="contact" class="contact main-section lines-bkg">
+            <h4 class="section-label">CONTACT</h4>
+
+            <main>
+                <h1>WANT TO TALK?</h1>
+                <h2>I really enjoy talking...</h2>
+
+                <form action="">
+                    <div>
+                        <input type="text" id="fName" name="" placeholder="First Name" required>
+                        <input type="text" id="lName" name="" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" name="" placeholder="email@mail.com" required>
+                    <input type="text" id="fSubject" name="" placeholder="Whats up?" required>
+                    <textarea id="fBody" name="" placeholder="Tell me more!" cols="30" rows="10" required></textarea>
+                    <button>SEND IT!</button>
+                </form>
+            </main>
+        </section>
+
+        <!-- <footer></footer> -->
         
         <script src="js/index.js"></script>
     </body>

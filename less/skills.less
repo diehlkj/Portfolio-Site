@@ -1,0 +1,46 @@
+.skills {
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    main {
+        // .debug(aqua);
+        display: flex;
+        // width: 900px;
+        margin: 0 auto;
+        flex-direction: column;
+
+        h1 {
+            font-size: 5.4rem;
+        }
+        h2 {
+            font-size: 3rem;
+            .light();
+            margin-bottom: 100px;
+        }
+
+        article {
+            // .debug(pink);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            table {
+                margin-right: 40px;
+                font-size: 3rem;
+
+                th {
+                    text-align: left;
+                    padding-bottom: 10px;
+                }
+                td {
+                    font-size: 2.5rem;
+                    .light();
+                    padding: 5px;
+                }
+                td:nth-of-type(2) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

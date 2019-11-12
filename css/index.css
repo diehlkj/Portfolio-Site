@@ -185,12 +185,36 @@ p {
   width: 100%;
   height: 100vh;
   background: #2b2b2b;
-  z-index: 100;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#loading h1 {
+  font-size: 6rem;
+  font-family: BigJohnBold, sans-serif;
+  margin-bottom: 20px;
+}
+#loading h2 {
+  font-size: 4.5rem;
+  font-family: BigJohnLight, sans-serif;
+  margin-bottom: 20px;
+}
+#loading h3 {
+  font-size: 3rem;
+  font-family: BigJohnRegular, sans-serif;
 }
 .main-section {
   display: flex;
   width: 100%;
   margin-bottom: 50px;
+}
+.lines-bkg {
+  background: url('../img/bkg-lines.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .section-label {
   position: absolute;
@@ -356,10 +380,6 @@ nav .hide-nav {
 .introduction {
   position: relative;
   height: 100vh;
-  background: url('../img/bkg-lines.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .introduction .intro-content {
   margin: 0 auto;
@@ -406,12 +426,52 @@ nav .hide-nav {
 }
 .introduction .intro-content a {
   text-decoration: none;
-  color: #7ed8fc;
+  color: dodgerblue;
   font-family: BigJohnLight, sans-serif;
   font-size: 2.7rem;
   margin-right: 30px;
 }
+.skills {
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+.skills main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.skills main h1 {
+  font-size: 5.4rem;
+}
+.skills main h2 {
+  font-size: 3rem;
+  font-family: BigJohnLight, sans-serif;
+  margin-bottom: 100px;
+}
+.skills main article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skills main article table {
+  margin-right: 40px;
+  font-size: 3rem;
+}
+.skills main article table th {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.skills main article table td {
+  font-size: 2.5rem;
+  font-family: BigJohnLight, sans-serif;
+  padding: 5px;
+}
+.skills main article table td:nth-of-type(2) {
+  text-align: right;
+}
 .projects {
+  min-height: 100vh;
   position: relative;
   flex-direction: column;
 }
@@ -420,6 +480,7 @@ nav .hide-nav {
   margin: 0 auto;
   flex-direction: column;
   justify-items: center;
+  padding-top: 50px;
 }
 .projects .project-list article {
   width: 900px;
@@ -558,4 +619,55 @@ nav .hide-nav {
 .projects .project-list article aside .info p {
   font-size: 1.9rem;
   margin-bottom: 20px;
+}
+.contact {
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  margin-bottom: 0;
+}
+.contact main {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact main h1 {
+  font-size: 5.4rem;
+}
+.contact main h2 {
+  font-size: 3rem;
+  font-family: BigJohnLight, sans-serif;
+  margin-bottom: 100px;
+}
+.contact main form {
+  display: flex;
+  flex-direction: column;
+}
+.contact main form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact main form div input {
+  width: 46%;
+}
+.contact main form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.contact main form textarea {
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.contact main form button {
+  background: dodgerblue;
+  color: #f7f7f7;
+  padding: 15px;
+  border: none;
+  font-size: 1.7rem;
+  font-family: BigJohnRegular, sans-serif;
 }
