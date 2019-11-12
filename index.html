@@ -4,16 +4,31 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Ken Diehl</title>
+        <title>Ken Diehl | Portfolio</title>
 
         <link href="css/index.css" rel="stylesheet">
-        <script src="js/index.js"></script>
     </head>
 
     <body>
-        <div id="loading"></div>
-        
-        <header class="landing main-section">
+        <div id="loading">
+            <h1>THANKS FOR SWINGING BY.</h1>
+            <h2>Im just getting things ready for you.</h2>
+            <h3>Just so you know, this portfolio is still under construciton...</h3>
+        </div>
+
+        <nav>
+            <h1>0<span id="sec-counter">0</span></h1>
+            <span id="nav-button">&#9776;</span>
+            <div class="hide-nav">
+                <a href="#landing">LANDING</a>
+                <a href="#introduction">INTRODUCTION</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+
+        <header id="landing" class="landing main-section">
             <p class="back-text">DEVELOPER <span>DESIGNER</span> HTML <span class="reg">CSS</span> JS PHP <span>SQL</span> PYTHON <span class="reg">GIT</span> LINUX <span>PHOTOSHOP</span> EXPERIENCE DESIGN <span class="reg">ILLUSTRATOR</span> HUMAN BEING <span>REAL PERSON</span> EMPATHETIC <span class="reg">CREATIVE</span> RESPONSIVE UNIQUE <span class="reg">EFFICIENT</span> <span>INDEPENDENT</span> HONEST <span>DYNAMIC</span> AMBITIOUS <span class="reg">ATTENTIVE</span> REALISTC
             </p>
             <div class="title">
@@ -22,113 +37,168 @@
                 <h3>WEB DEVELOPER</h3>
             </div>
     
-            </header>
-    
-            <section class="introduction main-section">
-    
-                <h4 class="section-label">INTRODUCTION</h4><!-- Section label -->
-    
-                <div class="intro-content"> <!-- Content Container -->
-                    <div class="intro-hi">
-                        <h1>HI</h1>
-                        <div>
-                            <h2>How are you doing?</h2>
-                            <h2>You look amazing today.</h2>
-                        </div>
-                    </div>
-    
-                    <p>My name is Ken Diehl, I'm a student full stack developer attending Lambda School. Over the last five years I've immersed myself in various web technologies and computer hardware with aspirations to begin a career in the web development industry.</p>
-    
-                    <h3>Want to get in touch?</h3>
-    
-                    <a href="https://github.com/diehlkj">GitHub</a>
-                    <a href="https://twitter.com/diehlkj">Twitter</a>
-                    <a href="https://www.linkedin.com/in/kenneth-d-b410b6118/">LinkedIn</a>
-                    <a href="mailto:diehlkj.dev@gmail.com">diehlkj.dev@gmail.com</a>
-                </div> <!-- End Content Container -->
-            </section>
-        
+        </header>
 
-        <section class="projects main-section">
+        <section id="introduction" class="introduction main-section lines-bkg">
+
+            <h4 class="section-label">INTRODUCTION</h4>
+
+            <div class="intro-content">
+                <div class="intro-hi">
+                    <h1>HI</h1>
+                    <div>
+                        <h2>How are you doing?</h2>
+                        <h2>You look amazing today.</h2>
+                    </div>
+                </div>
+
+                <p>My name is Ken Diehl, I'm a student full stack developer attending Lambda School. Over the last five years I've immersed myself in various web technologies and computer hardware with aspirations to begin a career in the web development industry.</p>
+
+                <h3>Want to get in touch?</h3>
+
+                <a href="https://github.com/diehlkj">GitHub</a>
+                <a href="https://twitter.com/diehlkj">Twitter</a>
+                <a href="https://www.linkedin.com/in/kenneth-d-b410b6118">LinkedIn</a>
+                <a href="#contact">Email</a>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills main-section lines-bkg">
+            <h4 class="section-label">SKILLS</h4>
+            <main>
+                <h1>WHAT ARE MY SKILLS?</h1>
+                <h2>Check out these handy dandy charts...</h2>
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">What I'm Comfortable With:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>6 Years</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>6 Years</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>2 Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">What I'm Learning:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>React</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Node</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>&#60;1 Year</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </article>
+            </main>
+        </section>
+        
+        <section id="projects" class="projects main-section lines-bkg">
             <h4 class="section-label">PROJECTS</h4>
             <div class="project-list">
                 <article>
-                    <figure></figure>
+                    <figure class="ajlt"></figure>
 
                     <aside>
                         <div class="project-title">
-                            <a href="">ONE LINE A DAY</a>
+                            <a href="https://github.com/diehlkj/Sprint-Challenge-Applied-Javascript">LAMBDA TIMES</a>
                             <div class="tags">
-                                <span class="html">HTML</span>
-                                <span class="css">CSS/LESS</span>
-                                <span class="js">JS</span>
+                                <span class="CSS">CSS/LESS</span>
+                                <span class="JS">JS</span>
                             </div>
                             
-                            <p class="desc">Landing page for One Line a Day journaling app.</p>
+                            <p class="desc">News site using JS component function and axios API calls.</p>
 
                             <div class="buttons">
-                                <a href="" class="github">VIEW ON GITHUB</a>
-                                <a class="more-info">MORE INFO</a>
+                                <a href="https://github.com/diehlkj/Sprint-Challenge-Applied-Javascript" class="github">VIEW ON GITHUB</a>
+                                <a id="ajlt" class="more-info">MORE INFO</a>
                             </div>
                         </div>
-                        <!-- <p class="role">What I did:<br/>
-                        - Created live site based off of a design by our UX designer<br/>
-                        - Modified layout for better view across different device sizes</p> -->
-                        
+
+                        <div id="ajlt-info" class="info info-hide">
+                            <h1>ROLE: JS DEVELOPER</h1>
+                            <p>This project was an exam testing understanding of the DOM, events, JavaScript components, HTTP GET requests and the Axios library.</p>
+                            
+                            <p>My role was to build components and axios requests to construct the pages header, trending tags, and article cards.</p>
+                        </div>
                     </aside>
                 </article>
                 <article>
-                    <figure></figure>
+                    <figure class="olad"></figure>
 
                     <aside>
                         <div class="project-title">
-                            <a href="">ONE LINE A DAY</a>
+                            <a href="https://bw-one-line-per-day.github.io/UI/">ONE LINE A DAY</a>
                             <div class="tags">
-                                <span class="html">HTML</span>
-                                <span class="css">CSS/LESS</span>
-                                <span class="js">JS</span>
+                                <span class="HTML">HTML</span>
+                                <span class="CSS">CSS/LESS</span>
+                                <span class="JS">JS</span>
                             </div>
                             
                             <p class="desc">Landing page for One Line a Day journaling app.</p>
 
                             <div class="buttons">
-                                <a href="" class="github">VIEW ON GITHUB</a>
-                                <a class="more-info">MORE INFO</a>
+                                <a href="https://github.com/bw-one-line-per-day/UI" class="github">VIEW ON GITHUB</a>
+                                <a id="olad" class="more-info">MORE INFO</a>
                             </div>
                         </div>
-                        <!-- <p class="role">What I did:<br/>
-                        - Created live site based off of a design by our UX designer<br/>
-                        - Modified layout for better view across different device sizes</p> -->
-                        
-                    </aside>
-                </article>
-                <article>
-                    <figure></figure>
 
-                    <aside>
-                        <div class="project-title">
-                            <a href="">ONE LINE A DAY</a>
-                            <div class="tags">
-                                <span class="html">HTML</span>
-                                <span class="css">CSS/LESS</span>
-                                <span class="js">JS</span>
-                            </div>
+                        <div id="olad-info" class="info info-hide">
+                            <h1>ROLE: FRONT-END DEVELOPER</h1>
+                            <p>The purpose of this project was to demonstrate our understanding of HTML/CSS/LESS fundamentals and to get a feel for working in an industry like environment.</p>
                             
-                            <p class="desc">Landing page for One Line a Day journaling app.</p>
-
-                            <div class="buttons">
-                                <a href="" class="github">VIEW ON GITHUB</a>
-                                <a class="more-info">MORE INFO</a>
-                            </div>
+                            <p>This was my first build week project for Lambda School. My role was to cooperate with another front-end developer and take design files from our dev team's UX designer and develop a landing page within spec of her design. In addition to the design implimentation, I was also resposible for making the page respond to fit most display sizes. </p>
                         </div>
-                        <!-- <p class="role">What I did:<br/>
-                        - Created live site based off of a design by our UX designer<br/>
-                        - Modified layout for better view across different device sizes</p> -->
-                        
                     </aside>
-                </article>
+                </article>                
             </div>
-            
-        </section> <!-- End Project Section -->
+        </section> 
+        
+        <section id="contact" class="contact main-section lines-bkg">
+            <h4 class="section-label">CONTACT</h4>
+
+            <main>
+                <h1>WANT TO TALK?</h1>
+                <h2>I really enjoy talking...</h2>
+
+                <form action="">
+                    <div>
+                        <input type="text" id="fName" name="" placeholder="First Name" required>
+                        <input type="text" id="lName" name="" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" name="" placeholder="email@mail.com" required>
+                    <input type="text" id="fSubject" name="" placeholder="Whats up?" required>
+                    <textarea id="fBody" name="" placeholder="Tell me more!" cols="30" rows="10" required></textarea>
+                    <button>SEND IT!</button>
+                </form>
+            </main>
+        </section>
+
+        <!-- <footer></footer> -->
+        
+        <script src="js/index.js"></script>
     </body>
 </html>
