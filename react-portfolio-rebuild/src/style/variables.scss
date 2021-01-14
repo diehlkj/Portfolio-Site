@@ -13,15 +13,15 @@ $john-light: "BigJohnPRO-Light", Arial, Helvetica, sans-serif;
 
 @font-face {
     font-family: "BigJohnPRO-Bold";
-    src: local("BigJohnPRO-Bold"),url("./type/BigJohnPRO-Bold.otf") format("truetype");
+    src: local("BigJohnPRO-Bold"),url("../assets/type/BigJohnPRO-Bold.otf") format("truetype");
 }
 
 @font-face {
     font-family: "BigJohnPRO-Regular";
-    src: local("BigJohnPRO-Regular"),url("./type/BigJohnPRO-Regular.otf") format("truetype");
+    src: local("BigJohnPRO-Regular"),url("../assets/type/BigJohnPRO-Regular.otf") format("truetype");
 }
 
 @font-face {
     font-family: "BigJohnPRO-Light";
-    src: local("BigJohnPRO-Light"),url("./type/BigJohnPRO-Light.otf") format("truetype");
+    src: local("BigJohnPRO-Light"),url("../assets/type/BigJohnPRO-Light.otf") format("truetype");
 }
