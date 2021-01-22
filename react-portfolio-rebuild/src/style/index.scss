@@ -1,8 +1,22 @@
+// * main file imports
+
 @import "reset.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "landing.scss";
 
+// * component imports
+
+@import "components/page-header.scss";
+
+// * general styles
+
 body {
-    background: #2d2d2d;
-    color: #ffffff;
+    background-image: url("../assets/img/white_texture.png");
+    background-repeat: repeat;
+    background-color: $color-light;
+    color: $color-dark;
+}
+a {
+    text-decoration: none;
 }
